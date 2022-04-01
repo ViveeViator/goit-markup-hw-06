@@ -764,11 +764,23 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 28px;
+  
 }
+
 .input-text {
+  font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+
+color: var(--footer-color);
+}
+
+.form-text {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  
   border-radius: 4px;
+}
+.form-text::placeholder {
+color: rgba(117, 117, 117, 0.5);
 }
