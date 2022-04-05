@@ -609,6 +609,9 @@ address {
 .footer-btn:focus {
   background-color: #188ce8;
 }
+.submit-icon {
+ margin-left: 10px;
+}
 
 /*----------------------------------------------------PORTFOLIO---------------------------*/
 
@@ -793,6 +796,10 @@ address {
   right: 8px;
   cursor: pointer;
 }
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
+}
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -805,7 +812,7 @@ address {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   color: var(--header-color);
 }
 .form-field {
@@ -885,10 +892,13 @@ color: rgba(117, 117, 117, 0.5);
   content: "";
   width: 15px;
   height: 15px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
   border-radius: 2px;
   margin-right: 8px;
   
+}
+.policy-check:hover + .check-text::before {
+  border: 2px solid var(--accent-color);
 }
 .policy-check:checked + .check-text::before{
   border: none;
