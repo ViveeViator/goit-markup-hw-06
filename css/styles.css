@@ -897,7 +897,8 @@ color: rgba(117, 117, 117, 0.5);
   margin-right: 8px;
   
 }
-.policy-check:hover + .check-text::before {
+.policy-check:hover + .check-text::before,
+.policy-check:focus + .check-text::before {
   border: 2px solid var(--accent-color);
 }
 .policy-check:checked + .check-text::before{
@@ -907,7 +908,7 @@ color: rgba(117, 117, 117, 0.5);
   background-position: center;
   background-size: cover;
 }
-.form-button{ 
+.form-button { 
   display: flex;
   justify-content: center;
 }
